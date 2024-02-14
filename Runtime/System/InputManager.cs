@@ -117,7 +117,8 @@ namespace com.Klazapp.Input
 #if UNITY_EDITOR
             var scrollAmount = mouseScrollAxis?.y?.value;
 
-            if (!scrollAmount.HasValue) return 0f;
+            if (!scrollAmount.HasValue) 
+            return 0f;
 
             if (mathExtension.approximately(scrollAmount.Value, 0f)) 
                 return 0f;
